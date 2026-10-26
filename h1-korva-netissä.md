@@ -4,6 +4,7 @@
 
 ## Vastaus tehtävään X
 - Alhaalla oma piirtämä spektri, rehellisesti ihan kauheaa katsottavaa mutta en nyt saanut oikeastaan parempaa läppärin trackpädillä ::)
+- lähde joka auttoi vähän spektrin ja radio aaltojen ymmärtämisessä: https://fi.wikipedia.org/wiki/S%C3%A4hk%C3%B6magneettinen_spektri
 
 <img width="943" height="563" alt="scuffed-spektri" src="https://github.com/user-attachments/assets/c596077b-7083-4d2b-88d2-a2d41045450a" />
 
