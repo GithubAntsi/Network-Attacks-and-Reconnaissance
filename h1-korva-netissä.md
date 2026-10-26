@@ -1,7 +1,12 @@
 # h1 Korva netissä
 
     x) Spektrini. Piirrä oma sähkömagneettinen spektri. Eli jana, jossa taajuus kasvaa. Ja 3-10 itseäsi kiinnostavaa sovellusta. Saavat olla aivan tavanomaisia. Merkitse nuolilla, mihin suuntaa kasvavat: aallonpituus, antennin koko, läpäisevyys, kyky siirtää tietoa. Tämä alakohta ei edellytä testejä tietokoneella.
-    
+
+## Vastaus tehtävään X
+- Alhaalla oma piirtämä spektri, rehellisesti ihan kauheaa katsottavaa mutta en nyt saanut oikeastaan parempaa läppärin trackpädillä ::)
+
+<img width="943" height="563" alt="scuffed-spektri" src="https://github.com/user-attachments/assets/c596077b-7083-4d2b-88d2-a2d41045450a" />
+
     a) WebSDR. Etäkäytä WebSDR-ohjelmaradiota, joka on kaukana sinusta ja kuuntele radioliikennettä. Radioliikenne tulee siepata niin, että radiovastaanotin on joko eri maassa tai vähintään 400 km paikasta, jossa teet tätä tehtävää. Käytä esimerkkinä julkista, suurelle yleisölle tarkoitettua viestiä, esimerkiksi yleisradiolähetystä. Kerro löytämäsi taajuus, aallonpituus ja modulaatio. Kuvaile askeleet ja ota ruutukaappaus. (Tehtävässä ei saa ilmaista sellaisen viestin sisältöä tai olemassaoloa, joka ei ole tarkoitettu julkiseksi. Voit sen sijaan kuvailla, miten sait julkisen radiolähetyksen kuulumaan kaiuttimistasi. Julkisten, esimerkiksi yleisradiolähetysten sisältöä saa tietysti kuvailla.)
 
 ## Vastaus tehtävään A
@@ -11,7 +16,6 @@
 - Kanavan tiedot jota kuuntelin -> Taajuus: 730 kHz, Aallonpituus 410,675 m ≈ 411 m, Modulaatio oli AM. (Taajuusalue joka oli päällä oli MW-160) Kanava jota kuuntelin soitti musiikkia sillä hetkellä ja vaikutti siltä että kanava soittaa pelkästään musiikkia (mainoksia välillä), radio lähetys kuitenkin on alkuperäisin alexandria egypti.
 
 <img width="945" height="591" alt="image" src="https://github.com/user-attachments/assets/710e667d-3179-41a1-ab4d-1d778e762abe" />
-
 
     b) Moduwhat? Kuuntele kanavaa, joka käyttää eri modulaatiota (AM, FM...) kuin edellisessä kohdassa käyttämäsi kanava.
 
@@ -30,7 +34,6 @@
 - Tietojen saanti tapa ADS-B Exchange sivulle on itse asiassa kiinnostava tapa, ADS-B Exchange sivun about osiosta 
 https://www.adsbexchange.com/about/
 voit osallistua itse olemaan "Feeder" eli autat vastaanottamaan lähi lentokoneista lähetettäviä sijaintia, korkeus, tunnistetiedot ja muuta dataa ja välität tiedot ADS-B exchange sivulle, jotta sivulla saadaan tarkka sijanti kartta suurimmasta osasta ilmassa olevista koneista.
-
 
 ## En tehnyt
     d) Vapaaehtoinen Atalaya. Asenna F-Droid ja sillä Atalaya. Käytä ohjelmaa ja selitä tulokset.
