@@ -1,15 +1,50 @@
-h2 Nuuh
+# h2 Nuuh
 
-    x) Lue ja tiivistä. (Tässä x-alakohdassa ei tarvitse tehdä testejä tietokoneella, vain lukeminen tai kuunteleminen ja tiivistelmä riittää. Tiivistämiseen riittää muutama ranskalainen viiva.)
-        Karvinen 2025: Wireshark - Getting Started
-        Karvinen 2025: Network Interface Names on Linux
-        
+## Vastaus Tehtävään X
+
+Wireshark
+- Wireshark on erittäin tunnettu ja suosittu tietoverkko snifferi/analysointi softa.
+- Liikenteen analysointi on erittäin helppoa Wiresharkin avulla.
+- Wireshark antaa hirveästi tietoa, joten analysointia suositellaan pienissä erissä.
+
+Network Interface Names on Linux
+- Verkkoliitäntä voi olla fyysinen tai virtuaalinen.
+- Prefix nimetys Linuxissa (en = Wired Ethernet, wl = WLAN, wireless local area network, Wifi, lo = Loopback adapter)
+- Liitännän loppuosa kertoo MAC osoitteen (numerosarja) tai mihin se on liitetty tietokoneessa.
+
+      x) Lue ja tiivistä. (Tässä x-alakohdassa ei tarvitse tehdä testejä tietokoneella, vain lukeminen tai kuunteleminen ja tiivistelmä riittää. Tiivistämiseen riittää muutama ranskalainen viiva.)
+      Karvinen 2025: Wireshark - Getting Started https://terokarvinen.com/wireshark-getting-started/
+      Karvinen 2025: Network Interface Names on Linux https://terokarvinen.com/network-interface-linux/
+
+
+## Vastaus Tehtävään A
+
+Asensin Kalin virtual boxiin, ei mitään ongelmia. Asennus meni helposti ja ei eronnut muista aikaisemmista tehdyistä linux asennuksista.
+
+<img width="1282" height="889" alt="image" src="https://github.com/user-attachments/assets/fe813cc0-50b8-472f-b223-e1fc0bdc8dd7" />
+
     a) Linux. Asenna Debian tai Kali Linux virtuaalikoneeseen. (Tätä alakohtaa ei poikkeuksellisesti tarvitse raportoida, jos sinulla ei ole mitään ongelmia. Jos on mitään haasteita, tee täsmällinen raportti)
     
+## Vastaus Tehtävään B
+
+Toimiva yhteys, ping google 8.8.8.8
+<img width="665" height="536" alt="image" src="https://github.com/user-attachments/assets/97b94434-f3f9-439c-874c-b0ae938ac83f" />
+
+Ei toimiva yhteys > internet yhteys poistettu hetkellisesti, ping google 8.8.8.8
+<img width="664" height="533" alt="image" src="https://github.com/user-attachments/assets/0eedb513-2af2-44c0-a03f-b6f127225fc8" />
 
     b) Ei voi kalastaa. Osoita, että pystyt katkaisemaan ja palauttamaan virtuaalikoneen Internet-yhteyden.
 
+## Vastaus Tehtävään C
+
+Kali distron mukana tuli wireshark joten asennusta ei tarvitse tehdä.
+
+Avasin Firefox selaimen, läpi tuli ja meni n. 5000 pakettia parin sekunnin sisällä.
+<img width="1000" height="726" alt="image" src="https://github.com/user-attachments/assets/065285e3-12c3-4580-86de-ad525b30d2be" />
+
     c) Wireshark. Asenna Wireshark. Sieppaa liikennettä Wiresharkilla. (Vain omaa liikennettäsi. Voit käyttää tähän esimerkiksi virtuaalikonetta).
+
+## Vastaus Tehtävään D
 
     d) Oikeesti TCP/IP. Osoita TCP/IP-mallin neljä kerrosta yhdestä siepatusta paketista. Selityksen lisäksi laatikoi ne ruutukaappauksesta.
 
