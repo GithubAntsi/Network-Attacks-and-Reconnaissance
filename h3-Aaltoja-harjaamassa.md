@@ -22,6 +22,10 @@ bläh
 Komennolla **"rtl_433 -V"** tulostaa rtl_433 versio tiedot.
 <img width="608" height="67" alt="image" src="https://github.com/user-attachments/assets/919439d7-9e4d-40cd-9d2f-e80de4cddcc3" />
 
+rtl_433 github sivun https://github.com/merbanan/rtl_433 ensimmäinen komento modifier on **"-V"**
+<img width="326" height="44" alt="image" src="https://github.com/user-attachments/assets/e682e64a-bfad-4414-900b-03afa4a5567d" />
+
+
     b) rtl_433. Asenna rtl_433 automaattista analyysia varten. Kokeile, että voit ajaa sitä. './rtl_433' vastaa "rtl_433 version 25.02 branch..."
 
 ## Vastaus tehtävään c
