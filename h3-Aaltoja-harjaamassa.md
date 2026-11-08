@@ -3,13 +3,16 @@
 ## Vastaus tehtävään X
 
 Hubacek
+
 bläh
 
 Cornelius
+
 bläh
 
 Vapaaehtoinen Lohner
-bläh
+
+En Vastannut
 
      x) Lue ja tiivistä. (Tässä x-alakohdassa ei tarvitse tehdä testejä tietokoneella, vain lukeminen tai kuunteleminen ja tiivistelmä riittää. Tiivistämiseen riittää muutama ranskalainen viiva.)
     Hubacek 2019: Universal Radio Hacker SDR Tutorial on 433 MHz radio plugs (Video, alkaen 3:19 ja päättyen 7:40. Yhteensä noin 4 min.)
@@ -65,54 +68,71 @@ https://github.com/merbanan/rtl_433/blob/master/docs/IQ_FORMATS.md alhaalla näk
     d) Too compex 16? Olet nauhoittanut näytteen 'urh' -ohjelmalla .complex16s-muodossa. Muunna näyte rtl_433-yhteensopivaan muotoon ja analysoi se. Näyte Recorded-HackRF-20250411_183354-433_92MHz-2MSps-2MHz.complex16s
 
 ## Vastaus tehtävään e
-    
+
+URH (Ultimate Radio Hacker) lataus ohjeet ja käyttö ohjeet löytyy sen github sivulta https://github.com/jopohl/urh
+
+Komennolla ***pipx install urh"** saa URH sovelluksen ladattua mutta pipx viittaa python kieleen joten jos URH ei asennu aikaisemmalla kommennolla pitää ladata ensimmäiseksi pipx -> **"sudo apt install pipx"**
+
+<img width="461" height="93" alt="image" src="https://github.com/user-attachments/assets/406feec0-9dca-4f48-9b41-9749049c1aad" />
+
+<img width="641" height="188" alt="image" src="https://github.com/user-attachments/assets/3b9fcdd9-4cc1-4fe2-b6ee-35c5cd1202d6" />
+
+URH sovellus tuli ladattua jo tunnilla Kaliin joten näytin Ubuntu versiossa terminaali virhe ilmoitukset.
+
+URH sovelluksen saa auki helpolla komennolla **"urh"**
+
+<img width="1035" height="615" alt="image" src="https://github.com/user-attachments/assets/7353542d-0fe0-4d92-a7ff-45683359d421" />
+
+Ladataan 1-on-on-on-HackRF... tiedosto koneelle wget avulla.
+
+<img width="744" height="265" alt="image" src="https://github.com/user-attachments/assets/7047fe78-1c1e-447a-becc-e540b0fb1c5b" />
+
+URH sovelluksen vasemmasta yläkulmasta löytyy nappi **"File"** sitten avautuvasta valikosta **"Open"** ja etsitään juuri ladattu tiedosto.
+
+<img width="321" height="117" alt="image" src="https://github.com/user-attachments/assets/0a8ad93d-3cc2-471a-a09a-b094149d48e7" />
+
+<img width="965" height="641" alt="image" src="https://github.com/user-attachments/assets/cbcc18fa-ad8e-4727-9b4c-cf802045f178" />
+
+Tiedosto avattu URH sovelluksessa
+
+<img width="1105" height="645" alt="image" src="https://github.com/user-attachments/assets/535c4a19-7d4c-4e24-94a2-b59e854183bb" />
+
     e) Ultimate. Asenna URH, the Ultimate Radio Hacker.
     Tarkastele näytettä 1-on-on-on-HackRF-20250412_113805-433_912MHz-2MSps-2MHz.complex16s. Siinä Nexan pistorasian kaukosäätimen valon 1 ON -nappia on painettu kolmesti. Käytä Ultimate Radio Hacker 'urh' -ohjelmaa.
-        f) Yleiskuva. Kuvaile näytettä yleisesti: kuinka pitkä, millä taajuudella, milloin nauhoitettu? Miltä näyte silmämääräisesti näyttää?
-        g) Bittistä. Demoduloi signaali niin, että saat raakabittejä. Mikä on oikea modulaatio? Miten pitkä yksi raakabitti on ajassa? Kuvaile tätä aikaa vertaamalla sitä johonkin. (Monissa singaaleissa on line encoding, eli lopullisia bittejä varten näitä "raakabittejä" on vielä käsiteltävä)
+
+## Vastaus tehtävään f
+
+Painamalla info nappia  <img width="97" height="36" alt="image" src="https://github.com/user-attachments/assets/54101e4b-a5d8-4660-b049-387180902d0f" />
+ URH sovelluksessa kun näyte on auki saadaan pientä infoa ilman erikoista tutkimista.
+
+<img width="771" height="227" alt="image" src="https://github.com/user-attachments/assets/f2c20167-f1a9-44e2-b485-1bffd3c60e6f" />
+
+Info ikkunasta saadaan selville nämä asiat.
+- Näytteen otto taajuus = 2 MSps (Löytyy tiedoston nimestä, laitetaan se itse kohtaan sample rate)
+- Näytteen kesto = 2,75 sekuntia (Info ikkunassa aika perustuu näytteen otto taajuuteen)
+- Näyteteen teko aika saadaan nimestä 12.04.2025 (tiedoston nimessä merkattu tyylillä -> 20250412)
+
+      f) Yleiskuva. Kuvaile näytettä yleisesti: kuinka pitkä, millä taajuudella, milloin nauhoitettu? Miltä näyte silmämääräisesti näyttää?
+
+## Vastaus tehtävään g
+
+Tässä maalasin kokonaisen "on" kommenon osuuden enne pientä stoppia, vaikka on monta on komentoa nopeassa rivissä niin meinaa vain että yksi painallus laitteessa lähettää monta kertaa käskyn jotta se menee varmasti perille.
+
+<img width="1081" height="711" alt="image" src="https://github.com/user-attachments/assets/40d9a92e-464b-4eee-9408-b7d29fc336e3" />
+
+Nyt on niin zoomattu kuva että näkee yksittäisen pulssin eli 1 tai 0 maalasin 3 bittiä 101 ja kuvaavassa ikkunassa näkyy miten on, off, on bitti maalattu. erittäin zoomattu versio ylemmästä kuvasta, yksi iso "on" pulssi perustuu moneen pieneen bittiin.
+
+<img width="759" height="483" alt="image" src="https://github.com/user-attachments/assets/e741a446-999e-4228-98a3-5af1b1b53cb2" />
+
+Maalasin yhden bitin ja huomaa että yksi bitti on 526 samples kooltaan, huomasin että ei kaikki mutta suurin osa tippuu tuohon 500 jotain luokkaan. voi muokata omaa samples/symbol sen mukaan. yksi bitti on myös ajallisesti 263 μs eli 263 mikrosekuntia pitkä https://fi.wikipedia.org/wiki/Sekunti
+
+<img width="638" height="400" alt="image" src="https://github.com/user-attachments/assets/d6767a35-fd84-493e-a0ab-0ad6f43c48ed" />
+
+Vähän apuja antava youtube video https://www.youtube.com/watch?v=MTzFFOBYyZA mutta loppujen lopuksi user guide auttaa myös https://www.oldergeeks.com/downloads/files/userguide.pdf
+
+    g) Bittistä. Demoduloi signaali niin, että saat raakabittejä. Mikä on oikea modulaatio? Miten pitkä yksi raakabitti on ajassa? Kuvaile tätä aikaa vertaamalla sitä johonkin. (Monissa singaaleissa on line encoding, eli lopullisia bittejä varten näitä "raakabittejä" on vielä käsiteltävä)
+
+## En vastannut h  + i 
+
     h) Vapaaehtoinen: Sdr++. Kokeile sdr++ -sovellusta ja esittele sillä jokin "hei maailma" -tyyppinen esimerkki.
     i) Vapaaehtoinen, vaikeahko: GNU Radio. Asenne GNU Radio ja tee sillä yksinkertainen "Hei maailma".
-
-Vinkit
-
-    WebSDR
-        Löydät asemia hakukoneilla. Niitä voi käyttää selaimella.
-        Valitse taajuus ja modulaatio. Säätele, kunnes radiolähetys kuuluu kaiuttimista.
-    rtl_433
-        Purkaa automaattisesti lukuisia protokollia
-        Tukee muitakin taajuuksia kuin 433 MHz
-        Kalissa 'sudo apt-get install rtl_433' (ja Sid:ssä)
-        Debianissa ja muissa
-            Projektin Github-sivulta merbanan/rtl_433
-            Releases-sivulta tuorein versio, jossa on:
-                Linux
-                amd64
-                SoapySDR (ei vaikuta tähän harjoitukseen, mutta vaaditaan esim HackRF-tukeen)
-                Omaan järjestelmään sopiva OpenSSL versio, Debian 12-Bookworm kanssa 3
-            $ sudo apt-get -y install atool wget libssl-dev libtool libusb-1.0-0-dev librtlsdr-dev rtl-sdr libsoapysdr-dev
-            $ wget https://github.com/merbanan/rtl_433/releases/download/25.02/rtl_433-soapysdr-openssl3-Linux-amd64-25.02.zip
-            $ aunpack rtl*.zip
-        Voi lukea suoraan radiolta (oletus) tai tiedostosta
-            $ rtl_433 -r foo_433.92M_1000k.cs8
-            $ man rtl_433
-        Tiedostomuodon muuttaminen 'urh' complex16s -> 'rtl_433' cs8
-            Vain tiedoston nimi muuttuu
-            Tiedoston nimessä pitää olla oikea taajuus (center frequency) ja näytteenottotaajuus (sample rate)
-            Erottimena alaviiva
-            foo_433.92M_1000k.cs8
-            File name meta data
-    Ultimate Radio Hacker 'urh'
-        URH avulla voi analysoida lähetteitä
-        Tässä kokeilemme analyysin alkuvaiheita, joissa saadut bitit eivät vielä ole niitä lopullisia bittejä
-        Helppo asennus, sopii valmiiksi kaapattujen signaalien analyysiin
-            $ sudo apt-get update
-            $ sudo apt-get -y install pipx
-            $ pipx install urh
-            $ pipx ensurepath
-            sulje ja avaa terminaali
-            $ urh
-            URH graafinen käyttöliittymä aukeaa
-        Signaalien sieppaamiseen tarvitaan laitetuki omalle softaradiolle. Tätä varten jouduin itse kääntämään sorsista ja säätelemään. Tässä tehtävässä et tarvitse laitetukea softaradiolle.
-        Voit leikata (crop) signaalia valitsemalla sen aallosta. Crop löytyy kontekstivalikosta, joka aukeaa hiiren oikealla napilla.
-    Gqrx löytyy Debianin paketinhallinnasta
-    Läpikävely (walktrough / spoiler): Nurminen 2025: h3 Aaltoja harjaamassa
