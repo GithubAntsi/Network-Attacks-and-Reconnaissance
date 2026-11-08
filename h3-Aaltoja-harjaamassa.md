@@ -4,11 +4,19 @@
 
 Hubacek
 
-bläh
+- URH spektri analysoinnilla etsitään taajuus jolla kaukosäädin lähettää, jonka jälkeen lähetys nauhoitetaan ja tallennetaan.
+
+- Modulaatioksi valittiin "ASK" ja "Autodetect parameters" avulla saadan arvioitua signaalin asetukset. -> modulaatio selityksiä (https://en.wikipedia.org/wiki/On%E2%80%93off_keying)
+
+- Automaattinen tunnistus ei ole aina täysin tarkka, antaa vain apuja ja suunnan joten tarkistetaan käsin parametrit jotta voidaan saada tarkkoja loppu tuloksia.
 
 Cornelius
 
-bläh
+- Tutkitaan langattoman sää aseman lämpötila ja kosteustietoja.
+
+- rtl_433 softa tunnistaa laitteen nimellä Nexus-TH ja purkaa mitatut arvot automaattisesti.
+
+- URH avulla tutkitaan sama signaali käsin. Lähetin kytkee radiosignaalin päälle ja pois joka viittaa OOK-modulaatiota. -> https://en.wikipedia.org/wiki/On%E2%80%93off_keying
 
 Vapaaehtoinen Lohner
 
@@ -52,7 +60,7 @@ Kaikilla eri protokollilla "proove, Nexa ja Klik.." on sama tunniste/id 8785315 
 
 ## Vastaus tehtävään d
 
-**"wget https://terokarvinen.com/verkkoon-tunkeutuminen-ja-tiedustelu/samples/Recorded HackRF-20250411_183354-433_92MHz-2MSps-2MHz.complex16s"** <- Taas lähetään tällä wget komennolla alkuun että saadaan tiedosto/näyte tietokoneelle.
+**"wget https://terokarvinen.com/verkkoon-tunkeutuminen-ja-tiedustelu/samples/Recorded-HackRF-20250411_183354-433_92MHz-2MSps-2MHz.complex16s"** <- Taas lähetään tällä wget komennolla alkuun että saadaan tiedosto/näyte tietokoneelle.
 
 <img width="1096" height="266" alt="image" src="https://github.com/user-attachments/assets/3f3687f9-ad5a-4b80-bbf9-898ada3ee144" />
 
@@ -120,7 +128,7 @@ Tässä maalasin kokonaisen "on" kommenon osuuden enne pientä stoppia, vaikka o
 
 <img width="1081" height="711" alt="image" src="https://github.com/user-attachments/assets/40d9a92e-464b-4eee-9408-b7d29fc336e3" />
 
-Nyt on niin zoomattu kuva että näkee yksittäisen pulssin eli 1 tai 0 maalasin 3 bittiä 101 ja kuvaavassa ikkunassa näkyy miten on, off, on bitti maalattu. erittäin zoomattu versio ylemmästä kuvasta, yksi iso "on" pulssi perustuu moneen pieneen bittiin.
+Nyt on niin zoomattu kuva että näkee yksittäisen pulssin eli 1 tai 0 maalasin 3 bittiä 101 ja kuvaavassa ikkunassa näkyy miten on, off, on bitti maalattu. erittäin zoomattu versio ylemmästä kuvasta, yksi iso "on" pulssi perustuu moneen pieneen bittiin. Modulaation selvittäminen helpottui kun painoi auto detect ja sitten softa antoi ASK modulaation.
 
 <img width="759" height="483" alt="image" src="https://github.com/user-attachments/assets/e741a446-999e-4228-98a3-5af1b1b53cb2" />
 
